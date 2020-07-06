@@ -3014,7 +3014,7 @@ parenthesized_expr:
   | as_loc(val_longident) { mkexp (Pexp_ident $1) }
   | template_string
     {
-      let (indent, expr) = $1 in
+      let (_indent, expr) = $1 in
       expr
     }
   | constant
